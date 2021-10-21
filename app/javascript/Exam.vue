@@ -3,7 +3,7 @@
     <div class="container">
       <div class="main justify-content-center d-flex align-items-center">
         <div class="row">
-          <div class="description col-lg-8 offset-lg-2 col-12">
+          <div class="description col-lg-6 offset-lg-3 col-8 offset-2">
           <span class="description">{{description}}</span>
           </div>
           <div class="answer col-lg-6 offset-lg-3 col-8 offset-2">
@@ -48,7 +48,7 @@ export default {
       setTimeout(()=>{
         console.log('end')
         this.moveNextButton()
-      }, 300)
+      }, 200)
     },
     moveNextButton () {
       const elm = document.getElementById('next-exam-btn')
@@ -66,7 +66,7 @@ export default {
     padding: 50px 0 50px 0;
   }
   .fade-enter-active, .fade-leave-active {
-    transition: opacity .3s;
+    transition: opacity .2s;
   }
   .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
     opacity: 0;

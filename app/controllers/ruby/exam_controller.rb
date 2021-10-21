@@ -1,5 +1,5 @@
 class Ruby::ExamController < ApplicationController
   def index
-    @method = Ruby::Method.all.first
+    @method = Ruby::Method.all.sample
   end
 end
