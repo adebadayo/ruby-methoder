@@ -11,14 +11,18 @@
               <div class="input-group input-group-lg mb-3">
               <span class="input-group-text">{{ruby_class_name}}#</span>
               <input autofocus="" class="form-control" tupe="text" />
-              <button v-on:click="answered = true" class="btn btn-outline-secondary" tupe="button">解答</button>
+              <button v-on:click="onClick" class="btn btn-outline-secondary" tupe="button">解答</button>
               </div>
             </form>
           </div>
-          <div class="correct-answer col-lg-6 offset-lg-3 col-8 offset-2" v-if="answered">
-            <h3 style="display:inline;" v-if="answered" class="description">{{ruby_method_name}}</h3>
-            <button v-on:click="" class="btn btn-outline-secondary" tupe="button">次の問題</button>
-          </div>
+          <transition name="fade">
+            <div class="correct-answer col-lg-6 offset-lg-3 col-8 offset-2" v-if="answered">
+              <form action="/ruby/exam">
+                <h3 style="display:inline;" v-if="answered" class="description">{{ruby_method_name}}</h3>
+                <button  id="next-exam-btn" class=" btn btn-outline-secondary" tupe="button">次の問題</button>
+              </form>
+            </div>
+          </transition>
         </div>
       </div>
     </div>
@@ -38,6 +42,16 @@ export default {
       answered: false
     }
   },
+  methods: {
+    onClick () {
+      this.answered = true
+      this.moveNextButton()
+    },
+    moveNextButton () {
+      const elm = document.getElementById('next-exam-btn')
+      elm.focus()
+    },
+  }
 }
 </script>
 
@@ -47,6 +61,12 @@ export default {
   }
   .description{
     padding: 50px 0 50px 0;
+  }
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .3s;
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
   }
   /*.correct-answer{*/
   /*  position: absolute;*/

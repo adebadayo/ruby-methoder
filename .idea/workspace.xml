@@ -4,7 +4,6 @@
     <list default="true" id="37723052-2931-4d02-a52e-02ab19992a6e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/javascript/Exam.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/Exam.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/ruby/exam/index.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/ruby/exam/index.html.slim" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +153,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1634825146882</updated>
-      <workItem from="1634825148845" duration="14363000" />
+      <workItem from="1634825148845" duration="15459000" />
     </task>
     <task id="LOCAL-00001" summary="add tables">
       <created>1634827796233</created>
@@ -177,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634837147086</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="解答を表示">
+      <created>1634839583618</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1634839583618</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +193,7 @@
     <MESSAGE value="add tables" />
     <MESSAGE value="メソッド問題ページモック作成" />
     <MESSAGE value="vuejs template追加" />
-    <option name="LAST_COMMIT_MESSAGE" value="vuejs template追加" />
+    <MESSAGE value="解答を表示" />
+    <option name="LAST_COMMIT_MESSAGE" value="解答を表示" />
   </component>
 </project>
