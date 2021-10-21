@@ -1,0 +1,22 @@
+
+.position-relative
+  .container
+    .main.justify-content-center.d-flex.align-items-center
+      .row
+        .description.col-lg-8.offset-lg-2.col-12
+          span = @method.description
+        .ansewer.col-8.offset-2
+          form
+            .input-group.input-group-lg.mb-3
+              span.input-group-text = "#{@method.ruby_class.name}#"
+              input.form-control[tupe='text' autofocus]
+              button.btn.btn-outline-secondary[tupe='button'] 解答
+
+
+scss:
+  .main{
+    margin: 200px 0 50px 0;
+  }
+  .description{
+    padding: 50px 0 50px 0;
+  }

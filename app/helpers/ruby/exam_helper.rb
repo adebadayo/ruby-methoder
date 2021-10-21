@@ -1,0 +1,2 @@
+module Ruby::ExamHelper
+end
