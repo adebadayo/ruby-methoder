@@ -1,0 +1,21 @@
+= form_with(model: ruby_method) do |form|
+  - if ruby_method.errors.any?
+    #error_explanation
+      h2
+        = pluralize(ruby_method.errors.count, "error")
+        |  prohibited this ruby_method from being saved:
+      ul
+        - ruby_method.errors.each do |error|
+          li
+            = error.full_message
+  .field
+    = form.label :name
+    = form.text_field :name
+  .field
+    = form.label :ruby_class_id
+    = form.text_field :ruby_class_id
+  .field
+    = form.label :pattern
+    = form.number_field :pattern
+  .actions
+    = form.submit class: "btn btn-primary"

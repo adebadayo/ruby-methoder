@@ -1,0 +1,17 @@
+p#notice
+  = notice
+p
+  strong
+    | Name:
+  = @ruby_method.name
+p
+  strong
+    | Ruby class:
+  = @ruby_method.ruby_class_id
+p
+  strong
+    | Pattern:
+  = @ruby_method.pattern
+= link_to 'Edit', edit_ruby_method_path(@ruby_method)
+|  | 
+= link_to 'Back', ruby_methods_path

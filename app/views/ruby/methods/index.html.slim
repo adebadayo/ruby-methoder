@@ -1,0 +1,31 @@
+p#notice
+  = notice
+h1
+  | Ruby Methods
+table
+  thead
+    tr
+      th
+        | Name
+      th
+        | Ruby class
+      th
+        | Type
+      th[colspan="3"]
+  tbody
+    - @ruby_methods.each do |ruby_method|
+      tr
+        td
+          = ruby_method.name
+        td
+          = ruby_method.ruby_class_id
+        td
+          = ruby_method.type
+        td
+          = link_to 'Show', ruby_method
+        td
+          = link_to 'Edit', edit_ruby_method_path(ruby_method)
+        td
+          = link_to 'Destroy', ruby_method, method: :delete, data: { confirm: 'Are you sure?' }
+br
+= link_to 'New Ruby Method', new_ruby_method_path

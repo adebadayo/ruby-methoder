@@ -1,0 +1,23 @@
+p#notice
+  = notice
+h1
+  | Ruby Classes
+table
+  thead
+    tr
+      th
+        | Name
+      th[colspan="3"]
+  tbody
+    - @ruby_classes.each do |ruby_class|
+      tr
+        td
+          = ruby_class.name
+        td
+          = link_to 'Show', ruby_class
+        td
+          = link_to 'Edit', edit_ruby_class_path(ruby_class)
+        td
+          = link_to 'Destroy', ruby_class, method: :delete, data: { confirm: 'Are you sure?' }
+br
+= link_to 'New Ruby Class', new_ruby_class_path

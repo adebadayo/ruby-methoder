@@ -1,0 +1,9 @@
+p#notice
+  = notice
+p
+  strong
+    | Name:
+  = @ruby_class.name
+= link_to 'Edit', edit_ruby_class_path(@ruby_class)
+|  | 
+= link_to 'Back', ruby_classes_path

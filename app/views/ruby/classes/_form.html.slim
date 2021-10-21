@@ -1,0 +1,15 @@
+= form_with(model: ruby_class) do |form|
+  - if ruby_class.errors.any?
+    #error_explanation
+      h2
+        = pluralize(ruby_class.errors.count, "error")
+        |  prohibited this ruby_class from being saved:
+      ul
+        - ruby_class.errors.each do |error|
+          li
+            = error.full_message
+  .field
+    = form.label :name
+    = form.text_field :name
+  .actions
+    = form.submit
