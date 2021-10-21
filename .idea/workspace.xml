@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37723052-2931-4d02-a52e-02ab19992a6e" name="Changes" comment="メソッド問題ページモック作成">
-      <change afterPath="$PROJECT_DIR$/app/javascript/Exam.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/packs/exam.js" afterDir="false" />
+    <list default="true" id="37723052-2931-4d02-a52e-02ab19992a6e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/packs/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/packs/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/Exam.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/Exam.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/ruby/exam/index.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/ruby/exam/index.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpack/environment.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack/environment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpacker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpacker.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +154,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1634825146882</updated>
-      <workItem from="1634825148845" duration="11898000" />
+      <workItem from="1634825148845" duration="14363000" />
     </task>
     <task id="LOCAL-00001" summary="add tables">
       <created>1634827796233</created>
@@ -177,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634830350923</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="vuejs template追加">
+      <created>1634837147086</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1634837147086</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +186,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add tables" />
     <MESSAGE value="メソッド問題ページモック作成" />
-    <option name="LAST_COMMIT_MESSAGE" value="メソッド問題ページモック作成" />
+    <MESSAGE value="vuejs template追加" />
+    <option name="LAST_COMMIT_MESSAGE" value="vuejs template追加" />
   </component>
 </project>

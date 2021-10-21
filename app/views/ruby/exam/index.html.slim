@@ -1,11 +1,9 @@
-#exam(data-description="#{@method.description}" data-ruby_class_name="#{@method.ruby_class.name}")
+#exam(
+  data-description="#{@method.description}"
+  data-ruby_class_name="#{@method.ruby_class.name}"
+  data-ruby_method_name="#{@method.name}"
+  )
 = javascript_pack_tag 'exam'
 = stylesheet_pack_tag 'exam'
 
 scss:
-  .main{
-    margin: 200px 0 50px 0;
-  }
-  .description{
-    padding: 50px 0 50px 0;
-  }
