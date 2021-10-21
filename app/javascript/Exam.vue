@@ -45,7 +45,10 @@ export default {
   methods: {
     onClick () {
       this.answered = true
-      this.moveNextButton()
+      setTimeout(()=>{
+        console.log('end')
+        this.moveNextButton()
+      }, 300)
     },
     moveNextButton () {
       const elm = document.getElementById('next-exam-btn')
